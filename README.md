@@ -138,7 +138,7 @@ When a user authenticates to Flywheel, their key is stored as plain
 text in this file
 
 ```
-.config/flywheel/user.json
+~/.config/flywheel/user.json
 ```
 
 As far as I can tell, this file persists until a log out with
