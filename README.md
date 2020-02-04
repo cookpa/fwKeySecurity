@@ -201,7 +201,7 @@ To search public repositories, see the script in `checkRepos.py`. The
 curl commands can be modified to search private repositories by
 providing the appropriate access token. See the [Github API developer
 documentation](https://developer.github.com/v3/guides/getting-started/). Flywheel
-API keys should **not** be stored in Github, even in private repositories.
+API keys should **not** be stored on Github, even in private repositories.
 
 
 
