@@ -27,7 +27,7 @@ for page in range(numPages):
 
   for repo in repoData:
     repoName = repo['name']
-    thCmd = "trufflehog --rules ../fwKeySecurity/rules.json --regex --entropy FALSE https://github.com/" + orgOrUserName + "/" + repoName
+    thCmd = "trufflehog --rules rules.json --regex --entropy FALSE https://github.com/" + orgOrUserName + "/" + repoName
     print("Checking " + repoName)
     ex = subprocess.Popen(thCmd, shell = True).wait()
     time.sleep(5)
