@@ -165,7 +165,6 @@ directory.
 
 
 
-
 # Detecting leaks on Github with truffleHog
 
 [truffleHog](https://github.com/dxa4481/truffleHog) is an open source
@@ -197,6 +196,12 @@ a URL on Github. Using the above rules example, we only search for
 Flywheel API keys, but you can add expressions to look for a [variety
 of other
 objects](https://github.com/dxa4481/truffleHogRegexes/blob/master/truffleHogRegexes/regexes.json). 
+
+To search public repositories, see the script in `checkRepos.py`. The
+curl commands can be modified to search private repositories by
+providing the appropriate access token. See the [Github API developer
+documentation](https://developer.github.com/v3/guides/getting-started/).
+
 
 
 # Preventing leaks prospectively with git secrets
