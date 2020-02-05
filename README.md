@@ -217,3 +217,6 @@ of git hooks, so that a repository owner can automatically scan for
 prohibited text when a `git commit` is executed. It can also search
 the commit history like `truffleHog`.
 
+An example using git-secrets for Flywheel keys:
+
+https://github.com/cookpa/gitSecretsFWDemo
