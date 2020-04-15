@@ -55,7 +55,7 @@ fw = flywheel.Client()
 
 which requires a separate login. An alternative method is to call
 `flywheel.Flywheel('my-key')`. Unlike `Client()`, this cannot be
-called with no arguments.
+called with no arguments, and may be deprecated.
 
 
 # Preventing key exposure in code
