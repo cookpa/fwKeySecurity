@@ -33,6 +33,41 @@ These logins are persistent until explicitly undone with `fw logout`,
 and will work for both the CLI and API. It works by creating a file
 under the user's home directory - see below for details.
 
+To keep the key secure, avoid typing it or having multiple copies lying
+around on your file system. One way to do this is to have a file under your
+home directory that is only accessible to you, which you can source as
+needed. An example in bash: 
+
+```
+# Turn off debugging output that could echo the key
+set +x
+
+FLYWHEEL_API_KEY=university.flywheel.io:123456789abcde
+
+fw login $FLYWHEEL_API_KEY
+
+# Don't leave the key in the environment
+unset FLYWHEEL_API_KEY
+```
+
+Alternatively, you can export the key as a variable that you can use with
+the API:
+
+```
+# Turn off debugging output that could echo the key
+set +x
+
+FLYWHEEL_API_KEY=university.flywheel.io:123456789abcde
+
+fw login $FLYWHEEL_API_KEY
+
+# export the key for use in other code
+export FLYWHEEL_API_KEY
+``` 
+
+These scripts would be sourced into your script or interactive shell,
+rather than executed.
+
 
 ## API calls
 
